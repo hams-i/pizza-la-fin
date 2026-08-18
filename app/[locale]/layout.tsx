@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const canonical = new URL(`/${locale}`, siteUrl).toString();
-  const socialImage = new URL("/media/pizza-la-fin-logo.png", siteUrl).toString();
+  const socialImage = new URL("/og.png", siteUrl).toString();
 
   return {
     title: { absolute: "Pizza La Fin | Neapolitan Pizza" },
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: "website",
       locale: localeMeta[locale].og,
       siteName: "Pizza La Fin",
-      images: [{ url: socialImage, width: 543, height: 117, alt: "Pizza La Fin" }],
+      images: [{ url: socialImage, width: 1734, height: 907, alt: "Pizza La Fin" }],
     },
     twitter: {
       card: "summary_large_image",

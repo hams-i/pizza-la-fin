@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!isLocale(locale)) return {};
   const c = ui[locale];
   const canonical = new URL(`/${locale}/blogs`, siteUrl).toString();
-  const socialImage = new URL("/media/pizza-la-fin-logo.png", siteUrl).toString();
+  const socialImage = new URL("/og.png", siteUrl).toString();
   return {
     title: { absolute: `${c.blogTitle} | Pizza La Fin` },
     description: c.blogLead,
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       type: "website",
       locale: localeMeta[locale].og,
       siteName: "Pizza La Fin",
-      images: [{ url: socialImage, width: 543, height: 117, alt: c.blogTitle }],
+      images: [{ url: socialImage, width: 1734, height: 907, alt: c.blogTitle }],
     },
     twitter: {
       card: "summary_large_image",

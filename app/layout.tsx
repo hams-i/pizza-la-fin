@@ -6,7 +6,7 @@ import "./globals.css";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001";
 const metadataBase = new URL(siteUrl);
-const socialImage = new URL(`${basePath}/media/pizza-la-fin-logo.png`, metadataBase).toString();
+const socialImage = new URL(`${basePath}/og.png`, metadataBase).toString();
 
 export const metadata: Metadata = {
   metadataBase,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/en",
     siteName: "Pizza La Fin",
-    images: [{ url: socialImage, width: 543, height: 117, alt: "Pizza La Fin" }],
+    images: [{ url: socialImage, width: 1734, height: 907, alt: "Pizza La Fin" }],
   },
   twitter: {
     card: "summary_large_image",

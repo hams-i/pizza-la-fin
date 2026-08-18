@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#ffffff"/>
+  <text
+    x="32"
+    y="32"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+    font-size="52"
+    font-weight="700"
+    letter-spacing="-0.06em"
+    fill="#CF4D03"
+  >P.</text>
+</svg>
